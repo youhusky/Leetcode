@@ -7,6 +7,8 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+ 
+//recursive 
 public class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         ArrayList<Integer> res = new ArrayList<Integer>();
@@ -18,7 +20,6 @@ public class Solution {
             return;
         helper(root.left, res);
         helper(root.right, res);
-        rea.add(root.val);
-        
+        res.add(root.val);
     }
 }
