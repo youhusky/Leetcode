@@ -7,6 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+ //Traverse
 public class Solution {
     private int depth;
     public int maxDepth(TreeNode root) {
