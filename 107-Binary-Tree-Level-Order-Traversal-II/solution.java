@@ -25,8 +25,9 @@ public class Solution {
                 if(node.right != null)
                     queue.add(node.right);
             }
-            res.add(0, level);
+            res.add(level);
         }
+        Collections.reverse(res);
         return res;
     }
 }
