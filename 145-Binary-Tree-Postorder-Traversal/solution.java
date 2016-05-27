@@ -10,7 +10,7 @@
 public class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         ArrayList<Integer> res = new ArrayList<Integer>();
-        helper(rot, res);
+        helper(root, res);
         return res;
     }
     private void helper(TreeNode root, ArrayList<Integer> res){
