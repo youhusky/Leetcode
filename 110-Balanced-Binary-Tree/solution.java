@@ -19,8 +19,7 @@ public class Solution {
 
         int left = maxDepth(root.left);
         int right = maxDepth(root.right);
-        System.out.println(left);
-        if (Math.abs(left-right) > 1) {
+        if (left == -1 || right == -1 ||Math.abs(left-right) > 1) {
             return -1;
         }
         return Math.max(left, right) + 1;
