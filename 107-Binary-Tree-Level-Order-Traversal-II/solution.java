@@ -29,10 +29,10 @@ public class Solution {
                     queue.offer(head.right);
                 }
             }
-            result.add(level);
+            result.add(0, level);
         }
         
-        Collections.reverse(result);
+        
         return result;
     }
 }
