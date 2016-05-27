@@ -9,18 +9,20 @@
  */
 public class Solution {
     public boolean isBalanced(TreeNode root) {
-        if (root = null)
-            return true;
-        if (Math.abs(height(root.left)-height(root.right)) <= 1)
-            return (isBalanced(root.left) && isBalanced(root.right));
-        return false;
+        return maxDepth(root) != -1;
     }
-    private int height(TreeNode root)
-    {
-        if (root == null)
+
+    private int maxDepth(TreeNode root) {
+        if (root == null) {
             return 0;
-        int left = height(root.left);
-        int right = height(root.right);
-        return Math.max(left,right) + 1;
+        }
+
+        int left = maxDepth(root.left);
+        int right = maxDepth(root.right);
+        System.out.println(left);
+        if (Math.abs(left-right) > 1) {
+            return -1;
+        }
+        return Math.max(left, right) + 1;
     }
 }
