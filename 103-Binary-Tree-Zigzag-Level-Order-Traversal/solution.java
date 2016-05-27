@@ -15,10 +15,11 @@ public class Solution {
         
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         queue.offer(root);
+    int count = 0;
     while(!queue.isEmpty()){
         ArrayList<Integer> level = new ArrayList<Integer>();
         int size = queue.size();
-        int count = 0;
+        
         for(int i=0;i<size;i++){
             TreeNode node = queue.poll();
             if (count%2==0)
@@ -33,5 +34,7 @@ public class Solution {
         count++;
         res.add(level);
     }
+    return res;
+    
     }
 }
