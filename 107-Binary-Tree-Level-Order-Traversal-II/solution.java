@@ -9,7 +9,7 @@
  */
 public class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+        ArrayList<List<Integer>> result = new ArrayList<List<Integer>>();
         if (root == null) {
             return result;
         }
