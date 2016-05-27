@@ -25,7 +25,7 @@ public class Solution {
                 if(node.right != null)
                     queue.add(node.right);
             }
-            res.add(level);
+            res.add(0, level);
         }
         return res;
     }
