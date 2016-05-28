@@ -7,6 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+ //recursive
 public class Solution {
     public boolean isValidBST(TreeNode root) {
         return isValid(root, null, null);
