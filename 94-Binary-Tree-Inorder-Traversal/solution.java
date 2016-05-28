@@ -16,6 +16,7 @@ public class Solution {
     private void helper(TreeNode root, ArrayList<Integer> res){
         if (root == null)
             return;
+        System.out.println(root.val);
         helper(root.left, res);
         res.add(root.val);
         helper(root.right, res);
