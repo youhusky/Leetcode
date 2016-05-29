@@ -10,6 +10,7 @@
 
 public class BSTIterator {
     int index = 0;
+    // init TreeNode
     ArrayList<TreeNode> res = new ArrayList<TreeNode>();
     public BSTIterator(TreeNode root) {
         dfs(root, res);
