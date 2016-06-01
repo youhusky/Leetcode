@@ -7,6 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+ //recursive
 public class Solution {
     public boolean isSymmetric(TreeNode root) {
         if (root == null) return true;
