@@ -46,12 +46,6 @@ The above binary tree is serialized as `"{1,2,3,#,#,4,#,#,5}"`.</div>
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
-
-<span class="hidebutton">[Microsoft](/company/microsoft/)</span></div>
-
-<div>
-
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Tree](/tag/tree/) [Hash Table](/tag/hash-table/) [Stack](/tag/stack/)</span></div>
