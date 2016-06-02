@@ -14,12 +14,6 @@ The maximum depth is the number of nodes along the longest path from the root no
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
-
-<span class="hidebutton">[Apple](/company/apple/) [LinkedIn](/company/linkedin/) [Uber](/company/uber/) [Yahoo](/company/yahoo/)</span></div>
-
-<div>
-
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Tree](/tag/tree/) [Depth-first Search](/tag/depth-first-search/)</span></div>
