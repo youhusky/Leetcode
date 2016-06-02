@@ -29,7 +29,7 @@ public class Solution {
                     queue.offer(head.right);
                 }
             }
-            result.add(0, level);
+            result.add(0, level); //add location from top
         }
         
         
