@@ -4,6 +4,7 @@ public class Solution {
     for (int n : nums)
         if (i == 0 || n > nums[i-1])
             nums[i++] = n;
+            System.out.println(i);
     return i;
     }
 }
