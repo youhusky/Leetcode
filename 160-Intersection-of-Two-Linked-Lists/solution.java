@@ -23,7 +23,12 @@ public class Solution {
         }
         currA = headA;
         currB = headB;
-        
+        // use two points the longer Linked list should go first
+        //1. 得到2个链条的长度。
+
+// 2. 将长的链条向前移动差值（len1 - len2）
+
+// 3. 两个指针一起前进，遇到相同的即是交点，如果没找到，返回null.
         if (lenA < lenB){
             for (int i=0; i< lenB-lenA; i++)
                 currB = currB.next;
@@ -33,7 +38,7 @@ public class Solution {
                 currA = currA.next;
         }
         
-        while (currA!= currB)
+        while (currA!= currB) // the node of next and val should be same
             {
                 currA = currA.next;
                 currB = currB.next;
