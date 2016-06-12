@@ -21,6 +21,12 @@ For the purpose of this problem, we define empty string as valid palindrome.
 
 <div>
 
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
+
+<span class="hidebutton">[Facebook](/company/facebook/) [Microsoft](/company/microsoft/) [Uber](/company/uber/) [Zenefits](/company/zenefits/)</span></div>
+
+<div>
+
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Two Pointers](/tag/two-pointers/) [String](/tag/string/)</span></div>
