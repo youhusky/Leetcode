@@ -1,5 +1,7 @@
 public class Solution {
     public void moveZeroes(int[] nums) {
+        // Shift non-zero values as far forward as possible
+        // Fill remaining space with zeros
         if (nums == null || nums.length == 1){
             return;
         }
