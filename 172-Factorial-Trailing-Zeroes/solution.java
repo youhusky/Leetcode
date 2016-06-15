@@ -1,3 +1,4 @@
+//count 5
 public class Solution {
     public int trailingZeroes(int n) {
        //recursive method
