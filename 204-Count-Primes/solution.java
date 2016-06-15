@@ -1,6 +1,6 @@
 public class Solution {
     public int countPrimes(int n) {
-        boolean notPrime[] = new boolean[n+2];
+        boolean notPrime[] = new boolean[n+3];
         notPrime[0] = notPrime[1] = true;
         for (int i = 2; i*i < n; i++){
             if (!notPrime[i]){
