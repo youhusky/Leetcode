@@ -1,5 +1,6 @@
 public class Solution {
     public int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
+    // first check whether there is a overlap
     int together;
         if (C <= E || A >= G || B >= H || D <= F) {
             together = 0;
