@@ -10,6 +10,6 @@ public class Solution {
             }
         }
         System.out.println(ret);
-        return ret.toString();
+        return ret.toString();  // equals to new String(ret)
     }
 }
