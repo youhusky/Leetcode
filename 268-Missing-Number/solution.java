@@ -7,8 +7,6 @@ public class Solution {
         for (int i:nums){
             real +=i;
         }
-        System.out.println(real);
-       
         return execption - real;
     }
 }
