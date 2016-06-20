@@ -10,31 +10,35 @@ Assume a BST is defined as follows:
 *   The right subtree of a node contains only nodes with keys **greater than** the node's key.
 *   Both the left and right subtrees must also be binary search trees.
 
-confused what `"{1,#,2,3}"` means? [> read more on how binary tree is serialized on OJ.](#)
+**Example 1:**  
 
-<div class="spoilers" style="display: none;">  
-**OJ's Binary Tree Serialization:**
-
-The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
-
-Here's an example:  
-
-<pre>   1
-  / \
- 2   3
-    /
-   4
-    \
-     5
+<pre>    2
+   / \
+  1   3
 </pre>
 
-The above binary tree is serialized as `"{1,2,3,#,#,4,#,#,5}"`.</div>
+Binary tree `[2,1,3]`, return true.
+
+**Example 2:**  
+
+<pre>    1
+   / \
+  2   3
+</pre>
+
+Binary tree `[1,2,3]`, return false.
 
 <div>
 
 [Subscribe](/subscribe/) to see which companies asked this question
 
 </div>
+
+<div>
+
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
+
+<span class="hidebutton">[Amazon](/company/amazon/) [Bloomberg](/company/bloomberg/) [Facebook](/company/facebook/) [Microsoft](/company/microsoft/)</span></div>
 
 <div>
 
