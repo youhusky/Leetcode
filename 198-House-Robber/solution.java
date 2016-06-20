@@ -16,3 +16,16 @@ public class Solution {
         return dp[nums.length-1];
     }
 }
+// if(nums==null||nums.length==0){
+//         return 0;
+//     }
+
+//     int n0 = 0;  // 记录没有选择当前houses时的获取的最大金额
+//     int n1 = 0;  // 记录选择当前houses时的获取的最大金额
+//     for(int i=0; i<nums.length; i++){
+//         int tmp = n0;
+//         n0 = Math.max(n0,n1);  //没有选择当前houses，那么它等于上次选择了或没选择的最大值  
+//         n1 = tmp+nums[i];  //选择了当前houses，值只能等于上次没选择的+当前houses的money
+//     }
+
+//     return Math.max(n0, n1);
