@@ -26,6 +26,6 @@ public class Solution {
                 break;
             }
         }
-        return stack.isEmpty();
+        return stack.isEmpty();// only contains these character
     }
 }
