@@ -11,15 +11,16 @@ public class Solution {
         for(char each:ch){ 
             index= each-'a';
             res[index]--;   //decrement number of characters remaining in the string to be analysed
-            if(visited[index]) //if character is already present in stack, dont bother
+            if(st.search(each)!=-1) //if character is already present in stack, dont bother
                 continue;
             //if current character is smaller than last character in stack which occurs later in the string again
             //it can be removed and  added later e.g stack = bc remaining string abc then a can pop b and then c
             while(!st.isEmpty() && each<st.peek() && res[st.peek()-'a']!=0){ 
-                visited[st.pop()-'a']=false;
+                st.pop();
+                //visited[st.pop()-'a']=false;
             }
+
             st.push(each); //add current character and mark it as visited
-            visited[index]=true;
         }
     
         StringBuilder sb = new StringBuilder();
