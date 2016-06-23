@@ -22,12 +22,6 @@ What if the inputs contain unicode characters? How would you adapt your solution
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
-
-<span class="hidebutton">[Amazon](/company/amazon/) [Uber](/company/uber/) [Yelp](/company/yelp/)</span></div>
-
-<div>
-
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Hash Table](/tag/hash-table/) [Sort](/tag/sort/)</span></div>
