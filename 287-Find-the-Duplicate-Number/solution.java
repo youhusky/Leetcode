@@ -15,6 +15,7 @@ public class Solution {
             else {
                 high = mid - 1;
             }
+            System.out.println(mid);
         }
         return low;
     }
