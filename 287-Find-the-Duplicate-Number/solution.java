@@ -6,7 +6,7 @@ public class Solution {
             int cnt=0;
             for (int i:nums){
                 if (i <= mid){
-                    ++cnt;
+                    cnt = cnt + 1;
                 }
             }
             if (cnt <= mid){
