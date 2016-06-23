@@ -14,6 +14,7 @@ public class NumArray {
         return num[j] - num[i-1];
     }
 }
+//0-1-2-3-4 0 01    012 0123    01234  
 
 
 // Your NumArray object will be instantiated and called as such:
