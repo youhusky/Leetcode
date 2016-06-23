@@ -1,3 +1,4 @@
+// dp[i] = min(dp[i],dp[i-Ci])
 public class Solution {
     public int coinChange(int[] coins, int amount) {
         int max = amount + 1;
