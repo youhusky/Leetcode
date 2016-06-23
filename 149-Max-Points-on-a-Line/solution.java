@@ -26,9 +26,9 @@ public class Solution {
                 sameX++;
                 continue;
             }
-            double k = (double) (points[j].y - points[i].y) / (double) (points[j].x - points[i].x);
+            double k = (double) (points[j].y - points[i].y) / (double) (points[j].x - points[i].x);//斜率
             if (map.get(k) == null)
-                map.put(k, 2);
+                map.put(k, 2);//两个点
             else
                 map.put(k, map.get(k) + 1);
         }
