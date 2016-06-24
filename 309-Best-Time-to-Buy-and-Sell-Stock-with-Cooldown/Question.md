@@ -27,12 +27,6 @@ Special thanks to [@dietpepsi](https://leetcode.com/discuss/user/dietpepsi) for 
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
-
-<span class="hidebutton">[Google](/company/google/)</span></div>
-
-<div>
-
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Dynamic Programming](/tag/dynamic-programming/)</span></div>
