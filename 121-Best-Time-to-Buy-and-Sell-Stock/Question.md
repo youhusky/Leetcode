@@ -30,12 +30,6 @@ In this case, no transaction is done, i.e. max profit = 0.
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
-
-<span class="hidebutton">[Amazon](/company/amazon/) [Bloomberg](/company/bloomberg/) [Facebook](/company/facebook/) [Microsoft](/company/microsoft/) [Uber](/company/uber/)</span></div>
-
-<div>
-
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Array](/tag/array/) [Dynamic Programming](/tag/dynamic-programming/)</span></div>
