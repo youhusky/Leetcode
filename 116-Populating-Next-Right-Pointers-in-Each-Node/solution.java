@@ -18,7 +18,7 @@ public class Solution {
             if (first == null){
                 first = p.left;//next level left child
             }
-            
+            //如果有左子树，那么next就是父节点
             if(p.left != null){
                 p.left.next = p.right;//2->3
             }
@@ -27,7 +27,7 @@ public class Solution {
             }
             
             if (p.next != null){
-                p.right.next = p.next.left;//2->3
+                p.right.next = p.next.left;//如果有next，那么设置右子树的next
                 p = p.next;
                 continue;
             }
