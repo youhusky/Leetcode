@@ -25,6 +25,12 @@ For example, the lowest common ancestor (LCA) of nodes `2` and `8` is `6`. Anoth
 
 <div>
 
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
+
+<span class="hidebutton">[Amazon](/company/amazon/) [Facebook](/company/facebook/) [Microsoft](/company/microsoft/) [Twitter](/company/twitter/)</span></div>
+
+<div>
+
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Tree](/tag/tree/)</span></div>
