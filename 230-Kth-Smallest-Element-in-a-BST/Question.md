@@ -29,12 +29,6 @@ Special thanks to [@ts](https://leetcode.com/discuss/user/ts) for adding this pr
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
-
-<span class="hidebutton">[Bloomberg](/company/bloomberg/) [Google](/company/google/) [Uber](/company/uber/)</span></div>
-
-<div>
-
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Binary Search](/tag/binary-search/) [Tree](/tag/tree/)</span></div>
