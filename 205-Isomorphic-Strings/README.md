@@ -1,0 +1,1 @@
+No two characters may map to the same character but a character may map to itself.
