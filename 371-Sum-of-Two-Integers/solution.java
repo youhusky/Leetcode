@@ -6,5 +6,6 @@ public class Solution {
         b = c << 1;
     }
     return a;
+    //位运算 手写
     }
 }
