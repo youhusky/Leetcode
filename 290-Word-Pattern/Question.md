@@ -27,6 +27,12 @@ Special thanks to [@minglotus6](https://leetcode.com/discuss/user/minglotus6) fo
 
 <div>
 
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
+
+<span class="hidebutton">[Dropbox](/company/dropbox/) [Uber](/company/uber/)</span></div>
+
+<div>
+
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Hash Table](/tag/hash-table/)</span></div>
