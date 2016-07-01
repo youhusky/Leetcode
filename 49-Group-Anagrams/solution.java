@@ -9,8 +9,9 @@ public class Solution {
     Map<String, Integer> m = new HashMap<>();
 
     for (String str : strs) {
-        String sortedStr = sortString(str);
-
+       
+        String sortedStr = sortString(str);//判断相同
+        
         if (m.containsKey(sortedStr)) {
             int index = m.get(sortedStr);
             res.get(index).add(str);
