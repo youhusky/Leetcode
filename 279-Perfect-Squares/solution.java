@@ -8,7 +8,7 @@ public class Solution {
             dp[i * i] = 1;
         }
         // 从小到大找任意数a
-        for(int a = 0; a <= n; a++){
+        for(int a = 1; a <= n; a++){
             // 从小到大找平方数bｘb
             for(int b = 1; a + b * b <= n; b++){
                 // 因为a+b*b可能本身就是平方数，所以我们要取两个中较小的
