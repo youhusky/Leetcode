@@ -4,7 +4,7 @@ public class Solution {
         // 将所有非平方数的结果置最大，保证之后比较的时候不被选中
         Arrays.fill(dp, Integer.MAX_VALUE);
         // 将所有平方数的结果置1
-        for(int i = 0; i * i <= n; i++){
+        for(int i = 1; i * i <= n; i++){
             dp[i * i] = 1;
         }
         // 从小到大找任意数a
