@@ -1,4 +1,5 @@
 public class Solution {
+    // BST
     public List<Integer> countSmaller(int[] nums) {
     Integer[] ans = new Integer[nums.length];
     List<Integer> sorted = new ArrayList<Integer>();
