@@ -9,24 +9,18 @@
  */
 public class Solution {
     
-    int sum = 0;
-    
     public int sumNumbers(TreeNode root) {
-        if(root != null) getSum(root);
-        return sum;
+        return helper(root, 0);
     }
-    
-    private void getSum(TreeNode n){
-        if(n.left == null && n.right == null){
-            sum += n.val;
+public int helper(TreeNode root, int sum) {
+        if (root == null) {
+            return 0;
         }
-        if(n.left != null){
-            n.left.val += n.val * 10;
-            getSum(n.left);
+        if (root.left == null && root.right == null) {
+            return sum * 10 + root.val;
         }
-        if(n.right != null){
-            n.right.val += n.val * 10;
-            getSum(n.right);
-        }
+        int left = helper(root.left, sum * 10 + root.val);
+        int right = helper(root.right, sum * 10 + root.val);
+        return left + right;
     }
 }
