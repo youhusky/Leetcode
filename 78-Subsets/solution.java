@@ -1,16 +1,18 @@
 public class Solution {
     public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> list = new ArrayList<>();
+        List<List<Integer>> res = new ArrayList();
+        if (nums == null || nums.length == 0)   return res;
+        List<Integer> curr = new ArrayList();
         Arrays.sort(nums);
-        backtrack(list, new ArrayList<>(), nums, 0);
-        return list;
+        dfs(nums, curr, res, 0);
+        return res;
     }
-    private void backtrack(List<List<Integer>> list , List<Integer> tempList, int [] nums, int start){
-        list.add(new ArrayList<>(tempList));
-        for(int i = start; i < nums.length; i++){
-            tempList.add(nums[i]);
-            backtrack(list, tempList, nums, i + 1);
-            tempList.remove(tempList.size() - 1);
+    private void dfs(int[] nums, List<Integer> curr, List<List<Integer>> res, int index){
+        res.add(new ArrayList(curr));// add[]
+        for (int i = index; i < nums.length; i++){
+            curr.add(nums[i]);
+            dfs(nums, curr, res, i + 1);
+            curr.remove(curr.size()-1);//1-2-3    1 3
         }
     }
 }
