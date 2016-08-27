@@ -1,28 +1,25 @@
 public class Solution {
     public int maxSumSubmatrix(int[][] matrix, int k) {
-        int m = matrix.length, n = 0;
-        if (m > 0) n = matrix[0].length;
-        if (m * n == 0) return 0;
-        
-        int M = Math.max(m, n);
-        int N = Math.min(m, n);
-        
-        int ans = Integer.MIN_VALUE;
-        for (int x = 0; x < N; x++) {
-            int sums[] = new int[M];
-            for (int y = x; y < N; y++) {
-                TreeSet<Integer> set = new TreeSet<Integer>();
-                int num = 0;
-                for (int z = 0; z < M; z++) {
-                    sums[z] += m > n ? matrix[z][y] : matrix[y][z];
-                    num += sums[z];
-                    if (num <= k) ans = Math.max(ans, num);
-                    Integer i = set.ceiling(num - k);
-                    if (i != null) ans = Math.max(ans, num - i);
-                    set.add(num);
-                }
+        int ans = Integer.MIN_VALUE, row = matrix.length, col = matrix[0].length;
+    for (int left = 0; left < col; left++) {
+        int[] helper = new int[row];
+        for (int right = left; right < col; right++) {
+            for (int i = 0; i < helper.length; i++) {
+                helper[i] += matrix[i][right];
             }
-        }
-        return ans;
+            int sumRight = 0;
+            TreeSet<Integer> ts = new TreeSet<>();
+            ts.add(0);  // this is important. without this, won't pass {1, 0}
+            for (int i : helper) {
+                sumRight += i;
+                Integer sumLeft = ts.ceiling(sumRight - k);
+                if (sumLeft != null) {
+                    ans = Math.max(ans, sumRight - sumLeft);
+                }
+                ts.add(sumRight);
+            }   // for
+        }   // for
+    }
+    return ans;
     }
 }
