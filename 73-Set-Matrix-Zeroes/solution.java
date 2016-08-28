@@ -14,7 +14,7 @@ public class Solution {
                     firstColZero = j == 0 ? true : firstColZero;
                 }
             }
-        }
+        }//imp!
         // 将除首行首列的位置置0
         for(int i = 1; i < matrix.length; i++){
             for(int j = 1; j < matrix[0].length; j++){
