@@ -1,12 +1,12 @@
 public class Solution {
     public class Point {
         int val;
-        int x;
-        int y;
-        public Point(int val, int x, int y) {
+        int row;
+        int col;
+        public Point(int val, int row, int col) {
             this.val = val;
-            this.x = x;
-            this.y = y;
+            this.row = row;
+            this.col = col;
         }
     }
     public int kthSmallest(int[][] matrix, int k) {
@@ -19,12 +19,14 @@ public class Solution {
         });
         pq.offer(new Point(matrix[0][0], 0, 0));
         for(int i = 1; i < k; i++) {
+            
             Point p = pq.poll();
-            if((p.x+1) < matrix.length) {
-                pq.offer(new Point(matrix[p.x+1][p.y], p.x+1, p.y));
+            System.out.println(p.val);
+            if((p.row+1) < matrix.length) {
+                pq.offer(new Point(matrix[p.row+1][p.col], p.row+1, p.col));
             }
-            if(p.x == 0 && (p.y+1) < matrix.length) {
-                pq.offer(new Point(matrix[p.x][p.y+1], p.x, p.y+1));
+            if(p.row == 0 && (p.col+1) < matrix.length) {
+                pq.offer(new Point(matrix[p.row][p.col+1], p.row, p.col+1));
             }
         }
         return pq.poll().val;
