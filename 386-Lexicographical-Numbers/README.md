@@ -1,0 +1,3 @@
+The big idea is Tree's pre-order traversal, which means we first output the root, and then its left and right child, and we cannot output right child until we finishing outputting all nodes on the left branch.
+For this problem, a dummy node is the top root, and its children are 1 through 9; for node 1, its children are 10, 100, 1000 and so on; for node 10, its children are 11 through 19.
+Notes that we use (i + 1 <= (i / 10) * 10 + 9) to restrict the range of children.
