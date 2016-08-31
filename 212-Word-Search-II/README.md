@@ -1,6 +1,31 @@
-思路
-如果还像一中那样，对每个词进行一遍Word Search I，那复杂度就太高了。我们可以先用待查单词建立一个字典树，这样我们在从矩阵中某个点开始深度优先搜索时，可以直接用字典树判断当前组成的字符串是否是某个单词的前缀。如果是某个单词的前缀，再继续搜索下去。字典树同样也提供search接口，所以同样可以用于判断是否已经搜索到这个词了。
+BACKTRACKING + TRIE
 
-注意
-因为结果中不能有重复，我们可以在加入结果前先判断是否已经加过该结果，也可以稍微修改一下字典树的search方法，使得每次我们搜索到一个单词时，将其isEnd的标记置为false，这样下次就不会搜索到这个词了。
+Intuitively, start from every cell and try to build a word in the dictionary. Backtracking (dfs) is the powerful way to exhaust every possible ways. Apparently, we need to do pruning when current character is not in any word.
 
+How do we instantly know the current character is invalid? HashMap?
+How do we instantly know what's the next valid character? LinkedList?
+But the next character can be chosen from a list of characters. "Mutil-LinkedList"?
+Combing them, Trie is the natural choice. Notice that:
+
+TrieNode is all we need. search and startsWith are useless.
+No need to store character at TrieNode. c.next[i] != null is enough.
+Never use c1 + c2 + c3. Use StringBuilder.
+No need to use O(n^2) extra space visited[m][n].
+No need to use StringBuilder. Storing word itself at leaf node is enough.
+No need to use HashSet to de-duplicate. Use "one time search" trie.
+For more explanations, check out dietpepsi's blog.
+
+CODE OPTIMIZATION
+
+UPDATE: Thanks to @dietpepsi we further improved from 17ms to 15ms.
+
+59ms: Use search and startsWith in Trie class like this popular solution.
+33ms: Remove Trie class which unnecessarily starts from root in every dfs call.
+30ms: Use w.toCharArray() instead of w.charAt(i).
+22ms: Use StringBuilder instead of c1 + c2 + c3.
+20ms: Remove StringBuilder completely by storing word instead of boolean in TrieNode.
+20ms: Remove visited[m][n] completely by modifying board[i][j] = '#' directly.
+18ms: check validity, e.g., if(i > 0) dfs(...), before going to the next dfs.
+17ms: De-duplicate c - a with one variable i.
+15ms: Remove HashSet completely. dietpepsi's idea is awesome.
+The final run time is 15ms. Hope it helps!
